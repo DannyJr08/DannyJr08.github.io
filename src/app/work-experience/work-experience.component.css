@@ -1,0 +1,9 @@
+.workExperience__descripcion {
+    
+}
+
+.workExperience__descripcion__repos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

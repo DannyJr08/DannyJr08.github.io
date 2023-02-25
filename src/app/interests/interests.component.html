@@ -1,0 +1,7 @@
+<section>
+    <h2>Interests</h2>
+    <div *ngFor="let interes of intereses; let i = index;">
+        <p>{{interes}}</p>
+        <p *ngIf="i !== intereses.length - 1"> | </p>
+    </div>
+</section>

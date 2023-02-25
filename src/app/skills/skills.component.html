@@ -1,0 +1,15 @@
+<section>
+    <h2>Skills</h2>
+    <div *ngFor="let skill of skills; let i = index;">
+        <p>{{skill}}</p>
+        <p *ngIf="i !== skills.length - 1"> | </p>
+    </div>
+    <div *ngFor="let lenguaje of lenguajesProgra; let i = index;">
+        <p>{{lenguaje}}</p>
+        <p *ngIf="i !== lenguajesProgra.length - 1"> | </p>
+    </div>
+    <div *ngFor="let herramienta of herramientasProgra; let i = index;">
+        <p>{{herramienta}}</p>
+        <p *ngIf="i !== herramientasProgra.length - 1"> | </p>
+    </div>
+</section>

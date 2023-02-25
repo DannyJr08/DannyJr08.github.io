@@ -1,1 +1,11 @@
-<p>work-experience works!</p>
+<section>
+    <h2>WORK EXPERIENCE</h2>
+    <div *ngFor="let infoExperiencia of Experiencias;" class="workExperience__descripcion centrar">
+        <h3>{{infoExperiencia.puesto}} - {{infoExperiencia.lugar}}</h3>
+        <p>{{infoExperiencia.duracion}}</p>
+        <p>{{infoExperiencia.descripcion}}</p>
+        <div *ngFor="let repo of infoExperiencia.repositorio" class="workExperience__descripcion__repos">
+            <a href="{{repo.liga}}">{{repo.nombre}}</a>
+        </div>
+    </div>
+</section>
